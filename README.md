@@ -1,4 +1,4 @@
-# Nicholas' Home Assistant Addon Repository
+# Bart's Home Assistant Addon Repository
 
 ## CUPS Addon
 

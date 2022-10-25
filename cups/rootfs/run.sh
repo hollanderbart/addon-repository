@@ -48,10 +48,13 @@ echo "$config" | tempio \
 mkdir -p /data/cups
 
 # Start Avahi, wait for it to start up
+echo "Starting Avahi"
 touch /var/run/avahi_configured
 until [ -e /var/run/avahi-daemon/socket ]; do
+  echo "sleep 1s"
   sleep 1s
 done
 
+echo "Starting CUPS"
 # Start CUPS
 /usr/sbin/cupsd -f

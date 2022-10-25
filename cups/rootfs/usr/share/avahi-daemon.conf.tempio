@@ -23,7 +23,7 @@ host-name={{.hostname}}
 #domain-name=local
 #browse-domains=0pointer.de, zeroconf.org
 use-ipv4=yes
-use-ipv6=yes
+use-ipv6=no
 #allow-interfaces=eth0
 #deny-interfaces=eth1
 #check-response-ttl=no
@@ -35,8 +35,8 @@ use-ipv6=yes
 #clients-max=4096
 #objects-per-client-max=1024
 #entries-per-entry-group-max=32
-ratelimit-interval-usec=1000000
-ratelimit-burst=1000
+#ratelimit-interval-usec=1000000
+#ratelimit-burst=1000
 
 [wide-area]
 enable-wide-area=yes
@@ -45,17 +45,17 @@ enable-wide-area=yes
 #disable-publishing=no
 #disable-user-service-publishing=no
 #add-service-cookie=no
-publish-addresses=no
-publish-hinfo=no
-publish-workstation=no
-publish-domain=no
+#publish-addresses=yes
+#publish-hinfo=yes
+#publish-workstation=yes
+#publish-domain=yes
 #publish-dns-servers=192.168.50.1, 192.168.50.2
 #publish-resolv-conf-dns-servers=yes
 #publish-aaaa-on-ipv4=yes
 #publish-a-on-ipv6=no
 
 [reflector]
-#enable-reflector=no
+enable-reflector=yes
 #reflect-ipv=no
 
 [rlimits]
